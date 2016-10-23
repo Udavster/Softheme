@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPFZodiac.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Zodiac" Height="300" Width="525">
+    <Grid>
+        <TextBox x:Name="dateOfBirthTextBox" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Margin="35,60,0,0" TextWrapping="Wrap" Text="DD/MM/YYYY" VerticalAlignment="Top" Width="200"/>
+        <Label Content="To get your age and Zodiac sign enter your date of birth:" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="zodiacSignImage" HorizontalAlignment="Left" Height="150" Margin="357,109,0,0" VerticalAlignment="Top" Width="150" Source="Images/12.png"/>
+        <Button x:Name="getInfoButton" Content="Get!" HorizontalAlignment="Left" Height="30" Margin="357,60,0,0" VerticalAlignment="Top" Width="150" Click="getInfoButton_Click"/>
+        <Label x:Name="responseLabel" Content="" HorizontalAlignment="Left" Margin="35,109,0,0" VerticalAlignment="Top" Width="200" Height="150"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\bin\Debug\WPFZodiac.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\bin\Debug\WPFZodiac.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\bin\Debug\WPFZodiac.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\MainWindow.baml
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\MainWindow.g.cs
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\App.g.cs
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac_MarkupCompile.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac.g.resources
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac.Properties.Resources.resources
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac.csproj.GenerateResource.Cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\WPFZodiac\obj\Debug\WPFZodiac.pdb

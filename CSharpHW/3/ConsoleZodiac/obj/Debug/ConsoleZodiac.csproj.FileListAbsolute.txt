@@ -1,0 +1,6 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\ConsoleZodiac\bin\Debug\ConsoleZodiac.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\ConsoleZodiac\bin\Debug\ConsoleZodiac.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\ConsoleZodiac\bin\Debug\ConsoleZodiac.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\ConsoleZodiac\obj\Debug\ConsoleZodiac.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\ConsoleZodiac\obj\Debug\ConsoleZodiac.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\3\ConsoleZodiac\obj\Debug\ConsoleZodiac.pdb
