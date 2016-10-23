@@ -3,13 +3,12 @@
 namespace ConsoleZodiac {
     class Program {
         static void Main(string[] args) {
-            System.Globalization.CultureInfo culture = System.Globalization.CultureInfo.CurrentCulture;           
             bool wrongInput;
             do {
                 wrongInput = false;
                 try {
                     Console.WriteLine("Enter your birth date(DD/MM/YYYY):");
-                    DateTime date = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", culture);
+                    DateTime date = ParseDate(Console.ReadLine(), date: new DateTime());
                     Console.WriteLine("Your age is {0}", GetAge(date));
                     Console.WriteLine("Your zodiac sign is {0}", GetZodiac(date));
                 } catch (FormatException) {
@@ -21,6 +20,48 @@ namespace ConsoleZodiac {
             } while (wrongInput);
             Console.ReadLine();
         }
+        public static DateTime ParseDate(string s,  DateTime date, int partN = 0){
+            if ((partN==0)&&(s.Length < 9)) throw new FormatException();
+            try {
+                switch (partN) {
+                    case 0:
+                        date = new DateTime();
+                        date = ParseDate(s.Substring(0, 3), date, 1);
+                        date = ParseDate(s.Substring(3, 3), date, 2);
+                        date = ParseDate(s.Substring(6, 4), date, 3);
+                        break;
+                    case 1:
+                        if (s[2] != '/') throw new FormatException();
+                        s = s.Substring(0, 2);
+                        int day;
+                        if (!Int32.TryParse(s, out day)) throw new FormatException();
+                        if ((day < 0) || (day > 31)) throw new FormatException();
+                        date = new DateTime(1000, 1, day);
+                        break;
+                    case 2:
+                        if (s[2] != '/') throw new FormatException();
+                        s = s.Substring(0, 2);
+                        int month;
+                        if (!Int32.TryParse(s, out month)) throw new FormatException();
+                        if ((month < 0) || (month > 12)) throw new FormatException();
+                        if (!Int32.TryParse(s, out month)) throw new FormatException();
+                        date = new DateTime(1000, month, date.Day);
+                        break;
+                    case 3:
+                        s = s.Substring(0, 4);
+                        int year;
+                        if (!Int32.TryParse(s, out year)) throw new FormatException();
+                        if ((year < 1000) || (year > DateTime.Now.Year)) throw new FormatException();
+                        if (!Int32.TryParse(s, out year)) throw new FormatException();
+                        date = new DateTime(year, date.Month, date.Day);
+                        break;
+                }
+            } catch (Exception) {
+                throw new FormatException(); //29.02.2001
+            }
+            return date;
+        }
+        
         public static int GetAge(DateTime dateOfBirth) {
             int age = DateTime.Now.Year - dateOfBirth.Year;
             bool birthdayRiched = (DateTime.Now.Month > dateOfBirth.Month) ||
