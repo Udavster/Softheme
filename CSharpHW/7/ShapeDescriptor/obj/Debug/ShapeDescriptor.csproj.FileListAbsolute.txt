@@ -1,0 +1,6 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\7\ShapeDescriptor\bin\Debug\ShapeDescriptor.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\7\ShapeDescriptor\bin\Debug\ShapeDescriptor.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\7\ShapeDescriptor\bin\Debug\ShapeDescriptor.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\7\ShapeDescriptor\obj\Debug\ShapeDescriptor.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\7\ShapeDescriptor\obj\Debug\ShapeDescriptor.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\7\ShapeDescriptor\obj\Debug\ShapeDescriptor.pdb
