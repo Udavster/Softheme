@@ -1,0 +1,6 @@
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\Printer\bin\Debug\Printer.exe.config
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\Printer\bin\Debug\Printer.exe
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\Printer\bin\Debug\Printer.pdb
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\Printer\obj\Debug\Printer.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\Printer\obj\Debug\Printer.exe
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\Printer\obj\Debug\Printer.pdb

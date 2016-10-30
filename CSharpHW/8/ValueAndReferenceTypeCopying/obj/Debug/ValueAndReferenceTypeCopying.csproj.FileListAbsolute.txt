@@ -1,0 +1,6 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\ValueAndReferenceTypeCopying\bin\Debug\ValueAndReferenceTypeCopying.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\ValueAndReferenceTypeCopying\bin\Debug\ValueAndReferenceTypeCopying.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\ValueAndReferenceTypeCopying\bin\Debug\ValueAndReferenceTypeCopying.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\ValueAndReferenceTypeCopying\obj\Debug\ValueAndReferenceTypeCopying.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\ValueAndReferenceTypeCopying\obj\Debug\ValueAndReferenceTypeCopying.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\ValueAndReferenceTypeCopying\obj\Debug\ValueAndReferenceTypeCopying.pdb

@@ -1,0 +1,6 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\12\IValidator\bin\Debug\IValidator.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\12\IValidator\obj\Debug\IValidator.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\12\IValidator\bin\Debug\IValidator.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\12\IValidator\bin\Debug\IValidator.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\12\IValidator\obj\Debug\IValidator.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\12\IValidator\obj\Debug\IValidator.pdb

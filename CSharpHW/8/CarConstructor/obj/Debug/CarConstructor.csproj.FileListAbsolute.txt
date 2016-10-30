@@ -1,0 +1,6 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\CarConstructor\bin\Debug\CarConstructor.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\CarConstructor\obj\Debug\CarConstructor.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\CarConstructor\bin\Debug\CarConstructor.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\CarConstructor\bin\Debug\CarConstructor.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\CarConstructor\obj\Debug\CarConstructor.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\8\CarConstructor\obj\Debug\CarConstructor.pdb

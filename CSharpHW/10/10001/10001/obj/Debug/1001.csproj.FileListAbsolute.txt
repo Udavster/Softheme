@@ -1,0 +1,6 @@
+C:\Users\1\Desktop\OneDrive\cSharp\10\1001\1001\bin\Debug\1001.exe.config
+C:\Users\1\Desktop\OneDrive\cSharp\10\1001\1001\bin\Debug\1001.exe
+C:\Users\1\Desktop\OneDrive\cSharp\10\1001\1001\bin\Debug\1001.pdb
+C:\Users\1\Desktop\OneDrive\cSharp\10\1001\1001\obj\Debug\1001.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\OneDrive\cSharp\10\1001\1001\obj\Debug\1001.exe
+C:\Users\1\Desktop\OneDrive\cSharp\10\1001\1001\obj\Debug\1001.pdb

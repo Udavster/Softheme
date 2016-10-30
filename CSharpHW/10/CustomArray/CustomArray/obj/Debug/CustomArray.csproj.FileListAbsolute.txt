@@ -1,0 +1,6 @@
+C:\Users\1\Desktop\OneDrive\cSharp\10\CustomArray\CustomArray\bin\Debug\CustomArray.exe.config
+C:\Users\1\Desktop\OneDrive\cSharp\10\CustomArray\CustomArray\bin\Debug\CustomArray.exe
+C:\Users\1\Desktop\OneDrive\cSharp\10\CustomArray\CustomArray\bin\Debug\CustomArray.pdb
+C:\Users\1\Desktop\OneDrive\cSharp\10\CustomArray\CustomArray\obj\Debug\CustomArray.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\OneDrive\cSharp\10\CustomArray\CustomArray\obj\Debug\CustomArray.exe
+C:\Users\1\Desktop\OneDrive\cSharp\10\CustomArray\CustomArray\obj\Debug\CustomArray.pdb

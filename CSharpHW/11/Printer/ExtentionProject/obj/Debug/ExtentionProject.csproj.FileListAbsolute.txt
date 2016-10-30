@@ -1,0 +1,8 @@
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\bin\Debug\ExtentionProject.exe.config
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\bin\Debug\ExtentionProject.exe
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\bin\Debug\ExtentionProject.pdb
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\bin\Debug\Printer.exe
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\bin\Debug\Printer.pdb
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\obj\Debug\ExtentionProject.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\obj\Debug\ExtentionProject.exe
+C:\Users\1\Desktop\OneDrive\cSharp\11\Printer\ExtentionProject\obj\Debug\ExtentionProject.pdb
