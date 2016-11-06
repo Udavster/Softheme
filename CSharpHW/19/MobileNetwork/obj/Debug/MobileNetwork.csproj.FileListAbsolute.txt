@@ -1,0 +1,12 @@
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\18\MobileNetwork\bin\Debug\MobileNetwork.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\18\MobileNetwork\bin\Debug\MobileNetwork.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\18\MobileNetwork\bin\Debug\MobileNetwork.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\18\MobileNetwork\obj\Debug\MobileNetwork.csprojResolveAssemblyReference.cache
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\18\MobileNetwork\obj\Debug\MobileNetwork.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\18\MobileNetwork\obj\Debug\MobileNetwork.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\19\MobileNetwork\bin\Debug\MobileNetwork.exe.config
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\19\MobileNetwork\obj\Debug\MobileNetwork.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\19\MobileNetwork\obj\Debug\MobileNetwork.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\19\MobileNetwork\bin\Debug\MobileNetwork.exe
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\19\MobileNetwork\bin\Debug\MobileNetwork.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\19\MobileNetwork\obj\Debug\MobileNetwork.csprojResolveAssemblyReference.cache
