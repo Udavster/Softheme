@@ -16,6 +16,7 @@ namespace MobileNetwork
         private event SmsHandle SmsSent;
         readonly int number;
         protected Dictionary<int, string> phoneBook;
+        public bool Silent = false;
         public int Number
         {
             get
@@ -80,12 +81,12 @@ namespace MobileNetwork
         }
         public void ReceiveSms(int sender, string text)
         {
-            Console.WriteLine("{0}: Received sms from {1}\n\t with text '{2}'",
+            if(!Silent) Console.WriteLine("{0}: Received sms from {1}\n\t with text '{2}'",
                 this.Number, GetNameByNumber(sender) ?? sender.ToString(), text);
         }
         public void ReceiveCall(int sender)
         {
-            Console.WriteLine("{0}: Received call from {1}",
+            if (!Silent) Console.WriteLine("{0}: Received call from {1}",
                 this.Number, GetNameByNumber(sender)??sender.ToString());
         }
         public void AddNumberToPhoneBook(int number, string name)

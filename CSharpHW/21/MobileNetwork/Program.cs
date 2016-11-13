@@ -76,8 +76,8 @@ namespace MobileNetwork
                 mobileOperator.AddFunds(subscribers[i].Number, 35);
             }
 
-            Filler.GenerateRandomCalls(subscribers, 100);
-            Filler.GenerateRandomSms(subscribers, 100);
+            GenerateRandomCalls(subscribers, 100);
+            GenerateRandomSms(subscribers, 100);
 
             Console.WriteLine("\nTotal subscribers number: {0}", mobileOperator.SubscribersCount);
 
@@ -97,7 +97,23 @@ namespace MobileNetwork
 
             Console.WriteLine();
         }
-        
+
+        public static void GenerateRandomCalls(MobileAccount[] subscribers, int callsNumber)
+        {
+            Random random = new Random();
+            for (int i = 0; i < callsNumber; i++)
+            {
+                subscribers[random.Next(0, subscribers.Length)].MakeCall(subscribers[random.Next(0, subscribers.Length)].Number);
+            }
+        }
+        public static void GenerateRandomSms(MobileAccount[] subscribers, int callsNumber)
+        {
+            Random random = new Random();
+            for (int i = 0; i < callsNumber; i++)
+            {
+                subscribers[random.Next(0, subscribers.Length)].SendSms(subscribers[random.Next(0, subscribers.Length)].Number, "");
+            }
+        }
 
     }
 

@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Serialization
 {
+    [Serializable, ProtoBuf.ProtoContract]
     public struct MemoMobileAccount
     {
+        [ProtoBuf.ProtoMember(1)]
         public int Number;
+        [ProtoBuf.ProtoMember(2)]
         public CustomKeyValuePair<int,string>[] phoneBook;
     }
 }

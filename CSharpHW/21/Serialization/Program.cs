@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 //using System.Threading.Tasks;
 
 
@@ -11,36 +12,50 @@ namespace Serialization
     {
         static void Main(string[] args)
         {
-            XmlOperatorInfoSerializer se = new XmlOperatorInfoSerializer();
-            Dictionary<int, string> call = new Dictionary<int, string>();
-            call.Add(1, "a");
-            call.Add(2, "a");
-            call.Add(3, "a");
-            call.Add(4, "a");
-            var arr = call.ToArray();
-            MobileOperatorWithMemo Verizon = new MobileOperatorWithMemo(1000);
-            MobileAccountWithMemo acc = new MobileAccountWithMemo(Verizon);
-            acc.AddNumberToPhoneBook(1, "one");
-            acc.AddNumberToPhoneBook(2, "two");
-            acc.AddNumberToPhoneBook(3, "three");
-            acc.AddNumberToPhoneBook(4, "four");
-            MobileAccountWithMemo acc2 = new MobileAccountWithMemo(Verizon);
-            MobileAccountWithMemo acc3 = new MobileAccountWithMemo(Verizon);
-            acc.MakeCall(acc2.Number);
-            acc2.MakeCall(acc.Number);
-            acc.MakeCall(acc2.Number);
-            acc2.MakeCall(acc.Number);
+            string path = "C:\\Users\\Udavster\\Documents\\fl2";
+            Console.WriteLine("Binary serializer stats:");
+            BinaryOperatorInfoSerializer bos = new BinaryOperatorInfoSerializer();
+            TestSerializer(bos, path+".bin", 10);
+            TestSerializer(bos, path + ".bin", 10);
 
-            acc.MakeCall(acc3.Number);
-            acc.MakeCall(acc3.Number);
-            acc3.MakeCall(acc.Number);
+            Console.WriteLine("\nJson serializer stats:");
+            JsonOperatorInfoSerializer jse = new JsonOperatorInfoSerializer();
+            TestSerializer(jse, path + ".json", 10);
+            TestSerializer(jse, path + ".json", 10);
 
-            Verizon.AddFunds(acc.Number, 100);
-            Verizon.AddFunds(acc2.Number, 200);
-            Verizon.AddFunds(acc3.Number, 300);
+            Console.WriteLine("\nXML serializer stats:");
+            XmlOperatorInfoSerializer xse = new XmlOperatorInfoSerializer();
+            TestSerializer(xse, path + ".xml", 10);
+            TestSerializer(xse, path + ".xml", 10);
 
-            se.Serialize(Verizon, "C:\\Users\\Udavster\\Documents\\fl2.txt");
-            
+            Console.WriteLine("\nProtobuf serializer stats:");
+            ProtobufOperatorInfoSerializer pse = new ProtobufOperatorInfoSerializer();
+            TestSerializer(pse, path + ".proto", 10);
+            TestSerializer(pse, path + ".proto", 10);
+
+            Console.ReadLine();
+        }
+        public static void TestSerializer(IOperatorInfoSerializer serializer, string path, int IterationsNum)
+        {
+            MobileOperatorWithMemo ATnT = new MobileOperatorWithMemo(maxNumber:10000, silent:true);
+            int num = 1000;
+            int callNum = 50;
+            int smsNum = 20;
+            int friendsNum = 50;
+            MobileAccountWithMemo[] subscribers = Filler.CreateSubscribersWithMemo(ATnT, num, true);
+            Filler.GenerateRandomCalls(subscribers, callNum);
+            Filler.GenerateRandomSms(subscribers, smsNum);
+            Filler.CreatePhonebooks(subscribers, friendsNum);
+            var watch = Stopwatch.StartNew();
+            MobileOperatorWithMemo ATnT2 = null;
+            for (int i = 0; i < IterationsNum; i++)
+            {
+                serializer.Serialize(ATnT, path);
+                ATnT2 = serializer.Deserialize(path);
+            }
+            watch.Stop();
+            Console.WriteLine("{0}ms",(UInt64)watch.ElapsedMilliseconds);
+            Console.WriteLine("Is obj before serialization equal to itself after? {0}", ATnT.Equals(ATnT2));
         }
     }
 }

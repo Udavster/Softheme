@@ -10,11 +10,12 @@ using MobileNetwork;
 
 namespace Serialization
 {
-    class XmlOperatorInfoSerializer: OperatorInfoSerializer
+    class XmlOperatorInfoSerializer : IOperatorInfoSerializer
     {
-        public void Serialize(MobileOperatorWithMemo mobileOperator, string path)
+        public void Serialize(MobileOperatorWithMemo mobileOperator, string path,
+            bool withCallsJournal = true, bool withSmsJournal = true)
         {
-            MemoMobileOperator memo = mobileOperator.GetMemo(true,true);
+            MemoMobileOperator memo = mobileOperator.GetMemo(withCallsJournal, withSmsJournal);
 
             XmlSerializer serializer = new XmlSerializer(memo.GetType());
 
@@ -23,17 +24,21 @@ namespace Serialization
             {
                 serializer.Serialize(streamWriter, memo);
             }
-            
+
         }
-        public void Deserialize(string path)
+        public MobileOperatorWithMemo Deserialize(string path)
         {
-            //using (StreamReader streamReader = File.OpenText(
-            //    path))
-            //{
-            //    memo = serializer.Deserialize(streamReader)
-            //        as MemoMobileAccount?;
-            //}
-            //MobileAccountWithMemo m = new MobileAccountWithMemo(Verizon, memo.Value);
+            XmlSerializer serializer = new XmlSerializer(typeof(MemoMobileOperator));
+            MemoMobileOperator memo;
+
+            using (StreamReader streamReader = File.OpenText(
+                path))
+            {
+                memo = serializer.Deserialize(streamReader)
+                    as MemoMobileOperator;
+            }
+
+            return new MobileOperatorWithMemo(memo);
         }
     }
 }

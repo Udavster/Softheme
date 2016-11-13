@@ -11,6 +11,10 @@ namespace Serialization
             base(mobileOperator, memo.Number)
         {
             this.phoneBook = new Dictionary<int, string>();
+            if (memo.phoneBook == null)
+            {
+                return;
+            }
             for (int i = 0; i < memo.phoneBook.Length; i++)
             {
                 this.phoneBook.Add(memo.phoneBook[i].Key, memo.phoneBook[i].Value);
@@ -37,6 +41,27 @@ namespace Serialization
                 Number = this.Number,
                 phoneBook = phoneBookMemo
             };
+        }
+        public bool Equals(MobileAccountWithMemo mobileAccount)
+        {
+            if (this.Number != mobileAccount.Number)
+            {
+                return false;
+            }
+            return this.phoneBook.Equals<int, string>(mobileAccount.phoneBook);
+        }
+        public override bool Equals(object obj)
+        {
+            var item = obj as MobileAccountWithMemo;
+            if (item == null)
+            {
+                return false;
+            }
+            return Equals(item);
+        }
+        public override int GetHashCode()
+        {
+            return this.Number ^ this.phoneBook.GetHashCode<int, string>();
         }
     }
 }

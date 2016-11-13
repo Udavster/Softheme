@@ -8,7 +8,7 @@ namespace MobileNetwork
 {
     public class MobileOperator
     {
-        public MobileOperator(int maxNumber, int minNumber = 0, int callPricing = 0, int smsPricing = 0)
+        public MobileOperator(int maxNumber, int minNumber = 0, int callPricing = 0, int smsPricing = 0, bool silent = false)
         {
             subscribers = new Dictionary<int, MobileAccount>();
             numberGenerator = new Random();
@@ -19,6 +19,7 @@ namespace MobileNetwork
             moneyOnAccount = new Dictionary<int, int>();
             CallPricing = callPricing;
             SmsPricing = smsPricing;
+            this.silent = silent;
         }
 
         protected int MinNumber;
@@ -30,7 +31,7 @@ namespace MobileNetwork
         protected Dictionary<int, int> moneyOnAccount;
         public int CallPricing { get; protected set; }
         public int SmsPricing { get; protected set; }
-
+        private bool silent = false;
 
         public SubscriberStats[] GetMostCalledSubscribers(int number)
         {
@@ -114,7 +115,7 @@ namespace MobileNetwork
             moneyOnAccount[sender.Number] -= this.SmsPricing;
             mobileAccount.ReceiveSms(sender.Number, text);
             smsJournal.Add(new KeyValuePair<int, int>(sender.Number, receiver));
-            return null;
+            return new OperatorInfoMessage();
         }
         public int GetFreeNumber()
         {
@@ -135,6 +136,7 @@ namespace MobileNetwork
         {
             try
             {
+                mobileAccount.Silent = this.silent;
                 this.subscribers.Add(mobileAccount.Number, mobileAccount);
                 this.moneyOnAccount.Add(mobileAccount.Number, 0);
             } catch (ArgumentException)

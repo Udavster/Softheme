@@ -6,3 +6,6 @@ C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Seria
 C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Serialization\obj\Debug\Serialization.csprojResolveAssemblyReference.cache
 C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Serialization\bin\Debug\MobileNetwork.exe
 C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Serialization\bin\Debug\MobileNetwork.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Serialization\bin\Debug\protobuf-net.dll
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Serialization\bin\Debug\protobuf-net.pdb
+C:\Users\Udavster\Dropbox\courses - Softheme\c#\ShkolaSoftheme\CSharpHW\21\Serialization\bin\Debug\protobuf-net.xml
