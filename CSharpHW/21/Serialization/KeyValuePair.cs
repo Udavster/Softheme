@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 namespace Serialization
 {
     [Serializable]
-    [XmlType(TypeName = "WhateverNameYouLike")]
+    //[XmlType(TypeName = "WhateverNameYouLike")]
     public struct CustomKeyValuePair<K, V>
     {
         public K Key
@@ -15,14 +15,5 @@ namespace Serialization
 
         public V Value
         { get; set; }
-        public static implicit operator CustomKeyValuePair<K,V>(System.Collections.Generic.KeyValuePair<K, V> kvp)
-        {
-            return new CustomKeyValuePair<K, V>()
-            {
-                Key = kvp.Key,
-                Value = kvp.Value
-            };
-        }
-       
     }
 }

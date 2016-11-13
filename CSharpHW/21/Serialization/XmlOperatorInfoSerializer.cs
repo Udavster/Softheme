@@ -12,9 +12,9 @@ namespace Serialization
 {
     class XmlOperatorInfoSerializer: OperatorInfoSerializer
     {
-        public void Serialize(MobileAccountWithMemo mobileAccountWithMemo, MobileOperator mobileOperator, string path)
+        public void Serialize(MobileOperatorWithMemo mobileOperator, string path)
         {
-            MemoMobileAccount memo = mobileAccountWithMemo.GetMemo();
+            MemoMobileOperator memo = mobileOperator.GetMemo(true,true);
 
             XmlSerializer serializer = new XmlSerializer(memo.GetType());
 
