@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<books>
+  <book author="Author" name="blah-2. Blah returns">
+    <price>1</price>
+    <desc>desc</desc>
+  </book>
+  <book author="Author" name="blah">
+    <price>2</price>
+    <desc>desc</desc>
+  </book>
+  <book author="1" name="1111">
+    <price>3</price>
+    <desc>Bestseller</desc>
+  </book>
+  <book author="1" name="2">
+    <price>10</price>
+    <desc>Bestseller</desc>
+  </book>
+  <book author="Peter Griffin" name="Family book">
+    <price>10</price>
+    <desc>Just like series</desc>
+  </book>
+  <book author="Someauthor" name="title">
+    <price>42</price>
+    <desc>desc</desc>
+  </book>
+</books>
